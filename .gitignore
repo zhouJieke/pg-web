@@ -1,0 +1,10 @@
+.DS_Store
+
+# Editor directories and files
+runtime/logs
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

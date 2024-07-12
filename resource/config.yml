@@ -1,0 +1,48 @@
+mysqlConfig:
+  # 数据库类型 mysql, sqlite3, postgres, sqlserver
+  driver: mysql
+  host: 1.94.145.80
+  port: 3306
+  userName: root
+  password: NmEGxbk4XJXZJJxY
+  database: base
+
+redis:
+  # 地址
+  address: 1.94.145.80:6379
+  # 密码
+  password: qq890621
+  # 连接的 Redis 数据库编号
+  db: 0
+  # 建立连接时的超时时间（秒）
+  dialTimeout: 10
+  # 读取响应时的超时时间（秒）
+  readTimeout: 10
+  # 写入请求时的超时时间（秒）
+  writeTimeout: 10
+  # 连接池大小
+  poolSize: 10
+  # 指定从连接池获取连接的超时时间（秒）
+  poolTimeout: 10
+
+
+app:
+  # 版本号
+  version: 1.0.0
+  #环境状态：dev=开发，pro=生产
+  env: dev
+  #运行服务端口（根据您的实际情况修改）
+  port: 8108
+  # 框架在运行的时候默认是debug模式 有：开发：debug，生产：release，测试模式：test
+  runLogType: debug
+
+log:
+  level: info  # 日志等级debug
+  root_dir: ./runtime/logs # 日志根目录
+  filename: app.log # 日志文件名称
+  format: json # 写入格式 可选json
+  show_line: true # 是否显示调用行
+  max_backups: 3 # 旧文件的最大个数
+  max_size: 500 # 日志文件最大大小（MB）
+  max_age: 28 # 旧文件的最大保留天数
+  compress: true # 是否压缩
